@@ -34,7 +34,7 @@ Follow these steps to run this project locally on your computer:
 3. Run the project:
 
    Double-click on the index.html file, or Right-click on index.html → Open with → Your preferred web browser (Chrome, Firefox, etc.)
-    
+    https://github.com/Ayan-Ahmad-Sheikh
 ## Usage
 
 1. Open the website in your browser.
@@ -53,4 +53,4 @@ Follow these steps to run this project locally on your computer:
 
 ## Authors
 
-- [@ayanahmad](https://github.com/ayanahmad)
+- [@ayanahmad](https://github.com/Ayan-Ahmad-Sheikh)
