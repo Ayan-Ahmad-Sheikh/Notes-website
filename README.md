@@ -29,13 +29,11 @@ Follow these steps to run this project locally on your computer:
 
 2. **Open the project folder:**
 
-Navigate to the folder you just cloned.
+   Navigate to the folder you just cloned.
 
-Run the project:
+3. Run the project:
 
-Double-click on the index.html file, or
-
-Right-click on index.html → Open with → Your preferred web browser (Chrome, Firefox, etc.)
+   Double-click on the index.html file, or Right-click on index.html → Open with → Your preferred web browser (Chrome, Firefox, etc.)
     
 ## Usage
 
