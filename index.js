@@ -7,7 +7,7 @@ const editButtons = document.getElementsByClassName("edit");
 const deleteButtons = document.getElementsByClassName("delete");
 let currentEditingTask = null;
 
-window.window.addEventListener("load", ()=>{
+window.window.addEventListener("load", () => {
     loadTasksFromLocalStorage();
 })
 
@@ -25,9 +25,17 @@ function saveTasksToLocalStorage() {
 function loadTasksFromLocalStorage() {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-    savedTasks.forEach(taskText => {
-        createTask(taskText);
-    });
+    if (!savedTasks || savedTasks.length === 0) {
+        const defaultTasks = [
+            "This is a simple Notes app built using HTML, CSS and JavaScript. You can Add,View, Update and Delete your Notes Easily.",
+            "All notes are saved in your browser using LocalStorage, so they stay even after refreshing or closing the page. However, if you clear your browser data, the notes will be deleted.",
+            `"Begin with Bismillah, end with Alhamdulillah." — Every task becomes Blessing when done for Allah.`
+        ];
+        defaultTasks.forEach(task => createTask(task));
+        localStorage.setItem("tasks", JSON.stringify(defaultTasks));
+    } else {
+        savedTasks.forEach(task => createTask(task));
+    }
 }
 
 
